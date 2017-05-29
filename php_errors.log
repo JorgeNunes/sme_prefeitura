@@ -1,0 +1,2 @@
+[25-May-2017 11:25:29 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/storage/framework/views/b03a97c3aad21f1de4ac86e2f19449a4ccc34b93.php on line 10
+[25-May-2017 14:47:15 UTC] PHP Fatal error:  Cannot use Request as Request because the name is already in use in /home/ubuntu/workspace/app/Http/Controllers/AlunoController.php on line 10

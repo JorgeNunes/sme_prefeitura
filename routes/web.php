@@ -12,11 +12,33 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('autenticar');
 });
 
+Route::get('autenticar', function () {
+    return view('login');
+});
 
+Route::post('autenticacao', 'FuncionarioController@login');
 
-Route::get('teste', function () {
-    return 'Hello World';
+Route::group(['middleware' => ['sme']], function () {
+    
+    Route::get('dashboard', 'AlunoController@viewCountVaga');
+    
+    Route::get('vaga', 'AlunoController@viewVaga');
+    
+    Route::post('vaga', 'AlunoController@selectAluno');
+    
+    Route::get('cadastro', 'AlunoController@viewVagaCadastro');
+    
+    Route::post('cadastrar', 'AlunoController@cadastrarAluno');
+    
+    Route::get('atualizar/{id_aluno}', 'AlunoController@atualizarStatusVaga');
+    
+    Route::get('visualizar/{id_aluno}', 'AlunoController@viewAluno');
+    
+    Route::get('calculo-fase-escolar/{dt_nascimento_aluno}', 'AlunoController@calcularFaseEscolar');
+
+     Route::get('logout', 'FuncionarioController@logout');
+
 });

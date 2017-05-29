@@ -1,0 +1,65 @@
+/*----GENERAL----*/
+
+input, select{
+	text-transform: uppercase;
+}
+
+.lowercase input{
+	text-transform: none !important;
+}
+
+.border{
+	border: 1px solid #bababa !important;
+}
+
+.border-right{
+	border-right: 1px solid #bababa !important;
+}
+
+.border-left{
+	border-left: 1px solid #bababa !important;
+}
+
+/*-----BACKGROUND COLOR-----*/
+
+.none-background {
+    background: rgba(0, 0, 0, 0.0) !important;
+}
+
+.background-dimgrey {
+    background-color: #696969 !important;
+}
+
+.background-black {
+    background-color: #000 !important;
+}
+
+.background-blue-light {
+    background-color: #4070b5 !important;
+}
+
+/*-----TEXT COLOR-----*/
+
+.text-color-dimgrey{
+    color: #696969 !important;
+}
+
+.text-color-white, .text-color-white a {
+    color: #fff !important;
+}
+
+.text-color-black{
+    color: #000 !important;
+}
+
+.text-color-grey51, .text-color-grey51 a{
+    color: #828282 !important;
+}
+
+.text-color-dark-green{
+    color: #526a77 !important;
+}
+
+.text-color-light-green{
+    color: #557587 !important;
+}
